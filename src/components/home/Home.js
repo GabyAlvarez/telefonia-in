@@ -21,10 +21,8 @@ const Home = () => {
 
             <div className="cliente">
                 <div className="btnCliente">
-                    <button>CONTRATA HOY</button>
+                    <button>ERES CLIENTE Y NECESITAS AYUDA</button>
                 </div>
-            
-
             </div>
             
         </div>

@@ -1,0 +1,137 @@
+.sectionHelp{
+    width: 100%;
+    margin: 0rem;
+}
+
+.chin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 70rem;
+    background-image: url('../../assets/chin.png');
+    background-size: cover;
+    margin: 0rem;
+}
+
+.text1{
+    text-align: left;
+    font: normal normal bold 8rem Roboto;
+    letter-spacing: 0rem;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 0rem;
+}
+
+.text2{
+    text-align: left;
+    font: italic normal normal 8rem Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 0rem;
+
+}
+
+.btnChin button{
+    width: 31.9rem;
+    height: 5.8rem;
+    background: #0063BC;
+    border: .03rem solid #FFFFFF;
+    border-radius: 4px;
+    opacity: 1;  
+    text-align: center;
+    font: normal normal bold 16px Roboto;
+    letter-spacing: 0.42px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 20rem;
+    margin-top: 4rem;
+}
+
+.servicioCliente{
+    
+}
+.servicioCliente p{
+    text-align: center;
+    font: normal normal normal 2.2rem Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.servicioCliente span{
+    text-align: center;
+    font: normal normal bold 2.2rem Roboto;
+    letter-spacing: 0px;
+    color: #0063BC;
+}
+.consultas{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 0rem 2rem;
+}
+.card{
+    min-width: 19.8rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: auto;
+    min-height: 9.8rem;
+}
+.monitor{
+    width: auto;
+    min-height: 8rem !important;
+    margin-bottom: 1.8rem;
+}
+.card p{
+    text-align: center;
+    font: normal normal normal 1.8rem Roboto;
+    letter-spacing: 0px;
+    color: hsl(0, 0%, 0%);
+    opacity: 1;
+    margin: 2rem 0rem 0rem 0rem;  
+}
+.blueLine{
+    background-color: #0063BC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    margin: 3rem 0rem;
+}
+.blueLine img{
+    width: 3.9rem;
+    height: 3rem;
+}
+.blueLine p{
+    text-align: center;
+    font: normal normal normal 1.8rem Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;  
+    margin: 0rem 10rem 0rem 2rem; 
+}
+.btnCliente{
+    display: flex;
+    justify-content: center;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.btnCliente button{
+    width: 24.3rem;
+    height: 6rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 4px solid #FF6A00;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 1.6rem Roboto;
+    letter-spacing: 0.42px;
+    color: #FF6A00;
+    opacity: 1;
+    margin: 1rem 0rem 4rem 0rem;
+}
