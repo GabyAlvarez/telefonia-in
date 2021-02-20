@@ -21,9 +21,11 @@ const Help = () => {
             </div>
 
             <div className="servicioCliente">
+                <div className="textCliente">
                 <p>Sabemos que la tecnología no siempre está de nuestro lado y <span>los inconvenientes suceden</span>.
                 Por ello,<span>ponemos a tu disposición nuestros canales de Servicio al Cliente para ayudarte</span>  
                 a resolver aquellos fallos o dudas que tengas sobre:</p>
+                </div>
             </div>
 
             <div className="consultas">
@@ -56,10 +58,9 @@ const Help = () => {
                 <p>673 690 0100</p>
             </div>
             
-            <div className="servicioCliente">
-                <div>
-                    <p>Aumenta tu velocidad de internet o cambia tu<span> Doble plack por un Triple pack</span>
-                    a un precio inigualable.</p>
+            <div className="infoVelocidad">
+                <div className="velocidad">
+                    <p>Aumenta tu velocidad de internet o cambia tu<span> Doble plack por un Triple pack</span> a un precio inigualable.</p>
                 </div>
 
                 <div className="btnCliente">

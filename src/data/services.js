@@ -5,7 +5,7 @@ const services = [
         "megabit": "50",
         "servicio": "+ 80 Canales + 50 Canales HD",
         "paquete": "",
-        "imagen": "../assets/Imagen1.png",
+        "imagen": "",
         "showFooter" : true
     }, 
     {

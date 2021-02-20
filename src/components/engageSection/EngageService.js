@@ -36,9 +36,7 @@ const EngageService = () => {
                     <p className="firstText">Internet <span>INIGUALABLE</span></p>
                     <p className="secondText">TV Interactiva + Telefonía Fija</p>
                     <p className="thirdText">Desde $449 al mes</p>
-                   
                     <button>LO QUIERO</button>
-                   
                 </div>
 
                 <div className="hire">
@@ -55,7 +53,7 @@ const EngageService = () => {
                 { servicios.map(service => (
                     <div className="cardPlus" key={service.id}>
                             <div className="sectionOne">
-                                <p>{service.paquete}</p>
+                                <p className="paquete">{service.paquete}</p>
                                 <img src={megasBasic} className="megas"></img>
                                 <p>{service.servicio}</p>
                                 <button onClick={ ()=> updateStatus(service.id) } className="buttonLoquiero">LO QUIERO</button>
@@ -72,15 +70,17 @@ const EngageService = () => {
                         </div>
                     </div>
                 ))} 
+            </div>
 
+            <div className="pack">
+                <button>TRIPLE PACK</button>
+                <button>DOBLE PACK</button>
             </div>
 
             <div className="services">
                 { basicServices.map(service => (
                     <div className="cardPlus" key={service.id}>
                             <div className="sectionOne">
-                                <p>{service.paquete}</p>
-                                <img src={megasBasic} className="megas"></img>
                                 <p>{service.servicio}</p>
                                 <button onClick={ ()=> updateBasicServicesStatus(service.id) } className="buttonLoquiero">LO QUIERO</button>
                             </div>

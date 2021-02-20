@@ -51,13 +51,19 @@
 }
 
 .servicioCliente{
-    
+    display: flex;
+    justify-content: center;
+}
+.textCliente{
+    margin: 4rem 0rem;
+    width: 70%;
 }
 .servicioCliente p{
     text-align: center;
     font: normal normal normal 2.2rem Roboto;
     letter-spacing: 0px;
     color: #000000;
+    margin: 0rem;
 }
 .servicioCliente span{
     text-align: center;
@@ -68,7 +74,7 @@
 .consultas{
     display: flex;
     justify-content: space-between;
-    padding: 2rem 3rem 0rem 2rem;
+    padding: 2rem 3rem 1.5rem 2rem;
 }
 .card{
     min-width: 19.8rem;
@@ -76,15 +82,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    transform: translateY(-8%);
 }
 .card img{
     width: auto;
-    min-height: 9.8rem;
-}
-.monitor{
-    width: auto;
-    min-height: 8rem !important;
-    margin-bottom: 1.8rem;
+    max-height: 9rem;
 }
 .card p{
     text-align: center;
@@ -113,6 +121,29 @@
     color: #FFFFFF;
     opacity: 1;  
     margin: 0rem 10rem 0rem 2rem; 
+}
+
+.infoVelocidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.velocidad{
+    margin: 4rem 0rem;
+    width: 52%;
+}
+.velocidad p{
+    text-align: center;
+    font: normal normal normal 2.2rem Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0rem;
+}
+.velocidad span{
+    text-align: center;
+    font: normal normal bold 2.2rem Roboto;
+    letter-spacing: 0px;
+    color: #0063BC;
 }
 .btnCliente{
     display: flex;

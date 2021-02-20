@@ -70,11 +70,11 @@
 }
 .pack{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 13rem;
     background-image: url('../../assets/sectionPack.png');   
-    margin: 3rem 0rem 4rem 0rem;
+    margin: 3rem 0rem 3rem 0rem;
     
 }
 .pack button{
@@ -125,11 +125,19 @@
 .sectionOne{
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
+    align-items: center;
+    margin: 1rem;
 
 }
 .sectionOne p{
     padding: 1.5rem 1rem 0rem 1rem;
+}
+.paquete{
+    text-align: left;
+    font: normal normal bold 2rem Roboto !important;
+    letter-spacing: 0px;
+    color: #434343;
+    opacity: 1;   
 }
 
 .sectionTwo{
