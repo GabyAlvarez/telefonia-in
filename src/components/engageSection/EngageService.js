@@ -1,11 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect, Fragment } from 'react'
 import './engageService.css'
 import mas from '../../assets/mas.png'
 import megasBasic from '../../assets/megasBasic.png'
 import wifi from '../../assets/wifi.svg'
 import ui from '../../assets/ui.svg'
+import {services, basicServicess} from '../../data/services'
 
 const EngageService = () => {
+    const [servicios, setServicios] = useState(services);
+    const [basicServices, setBasicServices] = useState(basicServicess);
+
+    const updateStatus = id => {
+        for(let index=0; index < servicios.length; index++ ) {
+            if (servicios[index].id === id) {
+                servicios[index].showFooter = !servicios[index].showFooter
+                setServicios([...servicios])
+            }
+        }
+    }
+
+    const updateBasicServicesStatus = id => {
+        for(let index=0; index < basicServices.length; index++ ) {
+            if (basicServices[index].id === id) {
+                basicServices[index].showFooter = !basicServices[index].showFooter
+                setBasicServices([...basicServices])
+            }
+        }
+    }
+
     return (
         <div className="engage">
 
@@ -30,30 +52,50 @@ const EngageService = () => {
             </div>
 
             <div className="services">
-                <div className="cardPlus">
-                    <div className="sectionOne">
-                        <img src={megasBasic} className="megas"></img>
-                        <p>+ 80 Canales + 50 Canales HD</p>
+                { servicios.map(service => (
+                    <div className="cardPlus" key={service.id}>
+                            <div className="sectionOne">
+                                <p>{service.paquete}</p>
+                                <img src={megasBasic} className="megas"></img>
+                                <p>{service.servicio}</p>
+                                <button onClick={ ()=> updateStatus(service.id) } className="buttonLoquiero">LO QUIERO</button>
+                            </div>
+                            <div className={ service.showFooter ? "sectionTwo" : 'hideSection'}>
+                                <p>TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                            </div>
+                        <div className={ service.showFooter ? "sectionThree" : 'hideSection'}>
+                            <img src={wifi}></img>
+                            <p>Conexión a Internet</p>
+                            <img src={ui}></img>
+                            <p>Llamadas ilimitadas</p>
+                            <p>Nacionales | A EUA y Canadá | A móviles</p>
+                        </div>
                     </div>
-                    <div className="sectionTwo">
-                        <p>TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
-                        <button>LO QUIERO</button>
-                    </div>
-                    <div className="sectionThree">
-                        <img src={wifi}></img>
-                        <p>Conexión a Internet</p>
-                        <img src={ui}></img>
-                        <p>Llamadas ilimitadas</p>
-                        <p>Nacionales | A EUA y Canadá | A móviles</p>
-                    </div>
-                </div>
+                ))} 
 
-                <div className="cardServices">
-                    {/*<img src={mas}></img>*/}
-                    <p></p>
-                    <button>LO QUIERO</button>
+            </div>
 
-                </div>
+            <div className="services">
+                { basicServices.map(service => (
+                    <div className="cardPlus" key={service.id}>
+                            <div className="sectionOne">
+                                <p>{service.paquete}</p>
+                                <img src={megasBasic} className="megas"></img>
+                                <p>{service.servicio}</p>
+                                <button onClick={ ()=> updateBasicServicesStatus(service.id) } className="buttonLoquiero">LO QUIERO</button>
+                            </div>
+                            <div className={ service.showFooter ? "sectionTwo" : 'hideSection'}>
+                                <p>TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                            </div>
+                        <div className={ service.showFooter ? "sectionThree" : 'hideSection'}>
+                            <img src={wifi}></img>
+                            <p>Conexión a Internet</p>
+                            <img src={ui}></img>
+                            <p>Llamadas ilimitadas</p>
+                            <p>Nacionales | A EUA y Canadá | A móviles</p>
+                        </div>
+                    </div>
+                ))} 
 
             </div>
             
