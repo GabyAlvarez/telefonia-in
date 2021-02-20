@@ -1,6 +1,9 @@
 import React from 'react'
 import './engageService.css'
 import mas from '../../assets/mas.png'
+import megasBasic from '../../assets/megasBasic.png'
+import wifi from '../../assets/wifi.svg'
+import ui from '../../assets/ui.svg'
 
 const EngageService = () => {
     return (
@@ -27,6 +30,24 @@ const EngageService = () => {
             </div>
 
             <div className="services">
+                <div className="cardPlus">
+                    <div className="sectionOne">
+                        <img src={megasBasic} className="megas"></img>
+                        <p>+ 80 Canales + 50 Canales HD</p>
+                    </div>
+                    <div className="sectionTwo">
+                        <p>TELEFONÍA FIJA: Llamadas ilimitadas MEX / EUA / CAN / Incluye llamadas ilimitadas a celular</p>
+                        <button>LO QUIERO</button>
+                    </div>
+                    <div className="sectionThree">
+                        <img src={wifi}></img>
+                        <p>Conexión a Internet</p>
+                        <img src={ui}></img>
+                        <p>Llamadas ilimitadas</p>
+                        <p>Nacionales | A EUA y Canadá | A móviles</p>
+                    </div>
+                </div>
+
                 <div className="cardServices">
                     {/*<img src={mas}></img>*/}
                     <p></p>
