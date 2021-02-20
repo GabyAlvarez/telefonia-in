@@ -1,0 +1,92 @@
+.engage{
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+
+.loquiero{
+    width: 100%;
+    height: 60rem;
+    background-image: url('../../assets/engageView.png');
+    opacity: 1;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    padding: 9rem 0rem 0rem 10rem;
+
+}
+.firstText{
+    text-align: left;
+    font: normal normal normal 50px/61px Roboto;
+    letter-spacing: 0px;
+    color: #141414;   
+    margin: 0rem; 
+}
+.firstText span{
+    font: normal normal 900 50px/61px Roboto;
+}
+.secondText{
+    text-align: left;
+    font: normal normal bold 30px/37px Roboto;
+    letter-spacing: 0px;
+    color: #141414;
+    opacity: 1;
+    margin: 1rem 0rem 1.5rem 0rem;
+}
+.thirdText{
+    text-align: left;
+    font: normal normal bold 30px/37px Roboto;
+    letter-spacing: 0px;
+    color: #141414;
+    background-color: #ffffff;
+    box-shadow: 0px 12px 25px #2424241A;
+    opacity: 1;
+    padding: 1rem 1rem 0.5rem 0.5rem;  
+    margin: 0rem;
+}
+.information button{
+    width: 24rem;
+    height: 6rem;
+    background: #0063BC 0% 0% no-repeat padding-box;
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 17px/20px Roboto;
+    letter-spacing: 0.42px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 4rem 0rem;
+}
+
+
+.hire{
+    width: 50%;
+
+}
+.pack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13rem;
+    background-image: url('../../assets/sectionPack.png');   
+    margin: 3rem 0rem 4rem 0rem;
+    
+}
+.pack button{
+    width: 24rem;
+    height: 6rem;
+    background: #0063BC 0% 0% no-repeat padding-box;
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal bold 17px/20px Roboto;
+    letter-spacing: 0.42px;
+    color: #FFFFFF;
+    opacity: 1;
+}
