@@ -6,6 +6,7 @@ import charla from '../../assets/charla.svg'
 import wifi from '../../assets/wifi.svg'
 import monitor from '../../assets/monitor.svg'
 import correo from '../../assets/correo.svg'
+import Footer from '../common/Footer'
 
 
 const Help = () => {
@@ -29,6 +30,7 @@ const Help = () => {
             </div>
 
             <div className="consultas">
+            
                 <div className="card">
                     <img src={dinero}></img>
                     <p>Consulta de saldo</p>
@@ -67,9 +69,7 @@ const Help = () => {
                     <button>TE AYUDAMOS</button>
                 </div>
             </div>
-
-              
-            
+            <Footer />  
         </div>
     )
 }

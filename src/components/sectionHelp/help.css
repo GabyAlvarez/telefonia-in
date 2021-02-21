@@ -86,6 +86,7 @@
     overflow: hidden;
     cursor: default;
     transition: all 400ms ease;
+    border: none !important;
 }
 .card:hover{
     transform: translateY(-8%);
@@ -165,4 +166,56 @@
     color: #FF6A00;
     opacity: 1;
     margin: 1rem 0rem 4rem 0rem;
+}
+
+@media (max-width: 576px) {
+.card img{
+    width: auto;
+    max-height: 4.5rem;
+}
+.blueLine{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+    align-items: center;
+    height: auto;
+    padding: 2rem 0rem;
+}
+.blueLine img{
+    width: 3.9rem;
+    height: 3rem;
+}
+.blueLine p{
+    text-align: center;
+    font: normal normal normal 1.8rem Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;  
+    margin: 2rem 0rem; 
+}
+.text1{
+    font: normal normal bold 6rem Roboto;
+    text-align: center;
+    margin: 4rem 0rem 2rem 0rem;
+}
+.text2{
+    font: normal normal bold 6rem Roboto;
+    text-align: center;
+}
+.chin{
+    height: auto;
+}
+.btnChin button{
+    margin-bottom: 6rem;
+}
+.consultas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.card{
+    margin-bottom: 3rem;
+}
 }

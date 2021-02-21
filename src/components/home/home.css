@@ -2,6 +2,8 @@
     width: 100%;
     height: 90vh;
     display: flex;
+    background-color: #0063BC !important;
+    margin: 0rem !important;
 }
 
 .contrata{
@@ -13,6 +15,11 @@
     background: transparent url('../../assets/brookeCagle.png') 0% 0% no-repeat padding-box;
     background-size: cover;
     opacity: 1; 
+    transition:all .5s ease-in-out;
+}
+.contrata:hover{
+    background-color: #0063BC;
+    
 }
 
 .contrata p{
@@ -36,11 +43,11 @@
     border-radius: 4px;
     opacity: 1;  
     text-align: center;
-    font: normal normal bold 16px Roboto;
+    font: normal normal bold 1.6rem Roboto;
     letter-spacing: 0.42px;
     color: #FFFFFF;
     opacity: 1;
-    margin: 20px 0px 100px 100px;
+    margin: 2rem 0rem 10rem 7rem;
 }
 
 .cliente{
@@ -53,8 +60,8 @@
     opacity: 1;
 }
 
-.btnCliente button{
-    width: 327px;
+.btnHelp{
+    width: 32rem !important;
     height: 58px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 4px solid #FF6A00;
@@ -65,6 +72,28 @@
     letter-spacing: 0.4px;
     color: #FF6A00;
     opacity: 1;
-    margin: 0px 0px 100px 100px;
+    margin: 0rem 0rem 10rem 7rem !important;
+}
+
+@media (max-width: 576px) {
+    
+    .buttonBox button{
+        width: 20rem !important;
+        height: 5rem !important;
+    }
+    .btnHelp {
+        width: 20rem !important;
+        height: 5rem !important;
+    }
+    .contrata{
+        height: 45rem;
+
+    }
+    .contrata p{ 
+        font-size: 2.4rem !important;
+    }
+    .cliente{
+        height: 45rem;
+    }
 }
 
